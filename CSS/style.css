@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{height: 100%;}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center;
+    
+    color: white;
+    background-color: #2692FF;
+
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: #1a5ea3;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.w100{
+    width: 100%;
+}
+
+main{
+    position: relative;
+    background-image: url('../IMG/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 800px;
+}
+
+.layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+main .container{
+    position: relative;
+    z-index: 2;
+}
+
+.icons-social{
+    float: right;
+    margin-bottom: 18px;
+}
+
+.icons-social a{
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    margin: 0 8px;
+}
+
+header{
+    border-bottom: 3px solid white;
+    padding: 10px 0;
+}
+
+header .logo{
+    float: left;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav.mobile{
+    display: none;
+    float: right;
+}
+
+nav.mobile > i{
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+nav.mobile ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 98px;
+    background-color: white;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile ul li{
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+}
+
+nav.mobile ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: lighter;
+    transition: 0.3s;
+}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop ul li{
+    display: inline-block;
+    margin-left: 80px;
+}
+
+nav.desktop ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    transition: 0.3s;
+}
+
+nav.desktop ul li a:hover, nav.mobile ul li a:hover{
+    color: rgb(182, 182, 182);
+}
+
+main aside{
+    width: 100%;
+    max-width: 640px;
+    padding: 80px 40px;
+    color: white;
+}
+
+main aside h1{
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+main aside h1 > strong{
+    color: #2692FF;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+main aside p{
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgb(173, 173, 173);
+}
+
+main aside .btn{
+    margin-top: 12px;
+}
+
+.chamada-planos{
+    width: 100%;
+    text-align: center;
+    padding: 24px 0;
+    background-color: rgb(220, 220, 220);
+}
+
+.chamada-planos h2{
+    display: inline-block;
+    color: #2692FF;
+    border-top: 2px solid #2692FF;
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.box-planos{
+    padding: 40px 0;
+}
+
+.box-planos > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-planos-single{
+    width: 33.3%;
+    padding: 0 45px;
+}
+
+.box-planos-wraper{width: 100%; box-shadow: 6px 9px 5px 1px rgba(0, 0, 0, 0.438); padding-bottom: 8px;}
+
+.box-planos-single h2{
+    background-color: #2692FF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: lighter;
+}
+
+.box-planos-single p{
+    margin-left: 8px;
+    color: #777777;
+    font-size: 17px;
+    margin-top: 12px;
+}
+
+.box-planos-single .preco{
+    text-align: center;
+    margin-top: 30px;
+    border-top: 2px solid rgb(185, 185, 185);
+    width: 70%;
+    margin: 20px auto;
+}
+
+.box-planos-single .preco h3{
+    display: inline-block;
+    color: rgb(143, 143, 143);
+    margin-top: 10px;   
+}
+
+section.parallax{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    padding: 40px 0;
+    background-image: url('../IMG/bg_parallax.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section.parallax > .container{
+    position: relative;
+    z-index: 2;
+    margin: 40px auto;
+    max-width: 960px;
+    color: white;
+}
+
+section.parallax h2{
+    text-align: center;
+}
+
+section.parallax p{
+    margin-top: 15px;
+}
+
+.overlay-parallax{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    background-color: rgba(20, 20, 20, 0.6);
+}
+
+section.final-section{
+    padding: 50px 0;
+}
+
+section.final-section h2{
+    position: relative;
+    font-weight: lighter;
+    color: #777777;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+section.final-section h2 > .borda-efeito{
+    width: 50px;
+    height: 3px;
+    background-color: #777;
+    position: absolute;
+    transition: 0.6s;
+}
+
+section.final-section h2:hover > .borda-efeito{
+    width: 100px;
+}
+
+section.final-section .contato input:not([type=submit]){
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+section.final-section .contato textarea{
+    height: 100px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    padding-top: 12px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    resize: vertical;
+}
+
+.time > .w50{
+    width: 47%;
+    margin-right: 3%;
+}
+
+.equipe-single{
+    border: 1px solid #ccc;
+    min-height: 280px;
+    padding-top: 15px;
+    padding: 15px 20px 0 20px;
+
+    box-shadow: 6px 9px 5px 1px rgba(0, 0, 0, 0.438); padding-bottom: 8px;
+}
+
+.equipe-single .topo-box-usuario{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.equipe-single .box-avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.equipe-single .info-usuario p:nth-of-type(2){
+    font-size: 13px;
+}
+
+.equipe-single .descricao-usuario-box{
+    color: #999;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    padding: 15px 0;
+}
+
+footer p{
+    font-size: 17px;
+}

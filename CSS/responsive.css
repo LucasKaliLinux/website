@@ -1,0 +1,44 @@
+@media screen and (max-width: 968px){
+
+    .box-planos-single{
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    .time > .w50{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .w50{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    main .container aside{
+        width: 100%;
+        padding: 80px 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    main .container p{
+        text-align: justify;
+    }
+
+    main .container aside .btn{
+        display: inline-block;
+    }
+}
